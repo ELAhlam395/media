@@ -126,7 +126,7 @@
          <a  href="#"  aria-disabled="true">Application</a>
         </div> &nbsp;&nbsp;&nbsp;&nbsp;
         <div class="col gradient-border"  id="box">
-          <a href="{{ url('providercontroller') }}">Providers</a>
+          <a href="{{ url('addprov') }}">Providers</a>
          </div> &nbsp;&nbsp;&nbsp;&nbsp;
          <div class="col gradient-border"  id="box">
           <a href="#">RDP</a>

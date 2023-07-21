@@ -17,4 +17,4 @@ Route::get('', function () {
     return view('appsupport/layout');
 });
 
-Route::get("providercontroller",[providercontroller::class,'index']);
+Route::get("addprov",[providercontroller::class,'index']);
