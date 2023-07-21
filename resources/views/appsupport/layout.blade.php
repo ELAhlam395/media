@@ -98,10 +98,13 @@
 
 </head>
 <body>
+
     <div class="container mt-5">
 
 
+
         @yield('content')
+
 
     </div>
     <nav id="main-menu">
@@ -112,6 +115,7 @@
              <li class="nav-button-GMAIL"><a href="#">LIST GMAIL</a></li>
         </ul>
     </nav>
+
     <div class="text-center text-white bg-dark">
       <h1 id="title">
         <i class="fa fa-comments" aria-hidden="true"></i>
