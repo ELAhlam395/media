@@ -9,13 +9,13 @@ class Provider extends Model
 {
     use HasFactory;
     public $timestamps=false;
-  //  protected $fillable = [
-       // 'name',
-      //  'link',
-      //  'user',
-     //   'password',
-      //  'location',
-//'comment',
-//
-   // ];
+  protected $fillable = [
+            'name',
+            'link',
+            'user',
+            'password',
+            'location',
+            'comment',
+
+   ];
 }

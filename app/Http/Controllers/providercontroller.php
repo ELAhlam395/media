@@ -13,7 +13,7 @@ class providercontroller extends Controller
     {
         return view('appsupport.addproviders');
     }
-    function addprovider(Request $req )
+    public function addprovider(Request $req )
 
     {
         $provider=new Provider;
