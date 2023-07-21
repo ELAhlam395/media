@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
+            $table->string('link');
+            $table->string('user');
+            $table->string('password');
+            $table->string('location');
+            $table->string('comment');
+
+
             $table->timestamps();
         });
     }
