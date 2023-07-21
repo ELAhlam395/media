@@ -13,42 +13,50 @@
         <div class="row">
             <div class="col s12">
                <h1>ADD PROVIDERS</h1>
+               <form action="addprv" method="POST">
+                 @csrf
+
+
                     <div class="mb-3 row">
                         <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="name" >
+                          <input type="text"  class="form-control" name="name" >
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="link" class="col-sm-2 col-form-label">Link</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="link">
+                          <input type="text" class="form-control" name="link">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="user" class="col-sm-2 col-form-label">User</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="user">
+                          <input type="text" class="form-control" name="user">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="password" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="password">
+                          <input type="text" class="form-control" name="password">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="loctaion" class="col-sm-2 col-form-label">Loctaion</label>
+                        <label for="location" class="col-sm-2 col-form-label">Location</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="loctaion">
+                          <input type="text" class="form-control" name="location">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="comment" class="col-sm-2 col-form-label">Comment</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="comment">
+                          <input type="text" class="form-control" name="comment">
                         </div>
                     </div>
+
+                    <button type="submit">add</button>
+
+                </form>
 
 
 

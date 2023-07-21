@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Provider extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'name',
-        'link',
-        'user',
-        'password',
-        'location',
-        'comment',
-
-    ];
+    public $timestamps=false;
+  //  protected $fillable = [
+       // 'name',
+      //  'link',
+      //  'user',
+     //   'password',
+      //  'location',
+//'comment',
+//
+   // ];
 }

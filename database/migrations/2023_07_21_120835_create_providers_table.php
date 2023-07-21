@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
+            $table->string('name');
             $table->string('link');
             $table->string('user');
             $table->string('password');
