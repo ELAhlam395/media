@@ -80,43 +80,36 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
                 </form>
+                <br><br><hr>
 
 
 
 
+                <h1>List PROVIDERS</h1>
+
+                <table class="table table-success table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">link</th>
+                        <th scope="col">user</th>
+                        <th scope="col">password</th>
+                        <th scope="col">location</th>
+                        <th scope="col">comment</th>
+                        <th scope="col">Action</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
 
 
+                    </tbody>
+                  </table>
 
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

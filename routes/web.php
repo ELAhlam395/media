@@ -22,3 +22,5 @@ Route::post("addprv",[providercontroller::class,'addprovider']);
 
 Route::get("cancel",[providercontroller::class,'cancel']);
 
+//Route::get("showprov",[providercontroller::class,'show']);
+

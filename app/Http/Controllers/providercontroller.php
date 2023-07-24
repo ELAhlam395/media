@@ -44,4 +44,12 @@ class providercontroller extends Controller
     {
         return view('appsupport.layout');
     }
+   // public function show($id)
+
+    //{
+
+//
+  //      $data= Provider::find($id);
+  //      return view('appsupport.addproviders')->with('showprov',$data);
+  //  }
 }

@@ -9,6 +9,8 @@ class Provider extends Model
 {
     use HasFactory;
     public $timestamps=false;
+    protected $table = 'providers';
+    protected $primaryKey = 'id';
   protected $fillable = [
             'name',
             'link',
@@ -18,4 +20,6 @@ class Provider extends Model
             'comment',
 
    ];
+
+
 }
