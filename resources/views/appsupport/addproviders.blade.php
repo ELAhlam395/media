@@ -9,6 +9,8 @@
 
 </head>
 <body>
+
+
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -21,42 +23,79 @@
                         <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
                           <input type="text"  class="form-control" name="name" >
+                          <span style="color: red">@error('name'){{$message}}
+
+                            @enderror</span>
                         </div>
+
                     </div>
                     <div class="mb-3 row">
                         <label for="link" class="col-sm-2 col-form-label">Link</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="link">
+                          <span style="color: red">@error('link'){{$message}}
+
+                            @enderror</span>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="user" class="col-sm-2 col-form-label">User</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="user">
+                          <span style="color: red">@error('user'){{$message}}
+
+                            @enderror</span>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="password" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="password">
+                          <span style="color: red">@error('password'){{$message}}
+
+                            @enderror</span>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="location" class="col-sm-2 col-form-label">Location</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="location">
+                          <span style="color: red">@error('location'){{$message}}
+
+                            @enderror</span>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="comment" class="col-sm-2 col-form-label">Comment</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="comment">
+                          <span style="color: red">@error('comment'){{$message}}
+
+                            @enderror</span>
                         </div>
                     </div>
 
                     <button type="submit">add</button>
+                    <a href="{{ url('cancel') }}"> <button type="button">cancel</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 </form>
+
+
+
+
 
 
 

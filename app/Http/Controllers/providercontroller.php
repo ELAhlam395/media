@@ -16,6 +16,17 @@ class providercontroller extends Controller
    public function addprovider(Request $req )
 
     {
+        $req->validate([
+            'name'=>'required',
+            'link'=>'required',
+            'user'=>'required',
+            'password'=>'required',
+            'location'=>'required',
+            'comment'=>'required'
+
+        ]);
+      //  return  $req->input();
+
         $provider=new Provider;
         $provider->name=$req->name;
         $provider->link=$req->link;
@@ -27,5 +38,10 @@ class providercontroller extends Controller
         return redirect('addprov');
 
         //return view('appsupport.addproviders');
+    }
+    public function cancel()
+
+    {
+        return view('appsupport.layout');
     }
 }
