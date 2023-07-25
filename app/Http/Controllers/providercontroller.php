@@ -52,6 +52,8 @@ class providercontroller extends Controller
         $pro = Provider::all();
         return view('appsupport.addproviders',compact('pro'));
     }
+
+
     public function delete($id)
 
     {

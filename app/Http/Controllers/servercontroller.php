@@ -60,6 +60,14 @@ class servercontroller extends Controller
         //
         return view('appsupport.listservers');
     }
+    public function showsrves()
+
+    {
+
+
+        $addsr = Server::all();
+        return view('appsupport.listservers',compact('addsr'));
+    }
 
 
 }
