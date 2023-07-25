@@ -17,14 +17,15 @@ use App\Http\Controllers\servercontroller;
 Route::get('', function () {
     return view('appsupport/layout');
 });
-
+//---------------controller provider---
+Route::get("home",[providercontroller::class,'cancel']);
 Route::get("addprov",[providercontroller::class,'index']);
 Route::post("addprv",[providercontroller::class,'addprovider']);
-Route::get("cancel",[providercontroller::class,'cancel']);
-//Route::get("showprov",[providercontroller::class,'show']);
 Route::get("addprov",[providercontroller::class,'show']);
 Route::get("delete/{id}",[providercontroller::class,'delete']);
-
 Route::get("edit/{id}",[providercontroller::class,'edit']);
-
 Route::post("updated/{id}",[providercontroller::class,'update']);
+
+
+//----------------------controller server--------------
+Route::get("addservers",[servercontroller::class,'index']);

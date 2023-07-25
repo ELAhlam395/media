@@ -110,8 +110,8 @@
 
     <nav id="main-menu">
         <ul class="nav-bar">
-             <li class="nav-button-home"><a href="#">Home</a></li>
-             <li class="nav-button-SERVERS"><a href="#">SERVERS</a></li>
+             <li class="nav-button-home"><a href="home">Home</a></li>
+             <li class="nav-button-SERVERS"><a href="{{ url('addservers') }}">SERVERS</a></li>
              <li class="nav-button-APPLICATION"><a href="#">PAYMENT</a></li>
              <li class="nav-button-GMAIL"><a href="#">LIST GMAIL</a></li>
         </ul>

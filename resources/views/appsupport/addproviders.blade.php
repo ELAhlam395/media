@@ -76,7 +76,7 @@
                     </div>
 
                     <button type="submit">add</button>
-                    <a href="{{ url('cancel') }}"> <button type="button">cancel</button></a>
+                    <a href="{{ url('home') }}"> <button type="button">cancel</button></a>
 
 
 
