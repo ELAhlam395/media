@@ -19,8 +19,7 @@ Route::get('', function () {
 
 Route::get("addprov",[providercontroller::class,'index']);
 Route::post("addprv",[providercontroller::class,'addprovider']);
-
 Route::get("cancel",[providercontroller::class,'cancel']);
-
 //Route::get("showprov",[providercontroller::class,'show']);
-
+Route::get("addprov",[providercontroller::class,'show']);
+Route::get("delete/{id}",[providercontroller::class,'delete']);

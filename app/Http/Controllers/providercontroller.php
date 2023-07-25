@@ -44,12 +44,24 @@ class providercontroller extends Controller
     {
         return view('appsupport.layout');
     }
-   // public function show($id)
+    public function show()
 
-    //{
+    {
 
-//
-  //      $data= Provider::find($id);
-  //      return view('appsupport.addproviders')->with('showprov',$data);
-  //  }
+
+        $pro = Provider::all();
+        return view('appsupport.addproviders',compact('pro'));
+    }
+    public function delete($id)
+
+    {
+        $pro = Provider::find($id);
+
+        //$pro::delete('delete from providers whre id =?',[$id]);
+
+        $pro ->delete();
+
+        return redirect('addprov');
+
+    }
 }

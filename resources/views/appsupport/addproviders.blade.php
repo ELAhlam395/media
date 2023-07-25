@@ -91,17 +91,38 @@
                 <table class="table table-success table-striped">
                     <thead>
                       <tr>
-                        <th scope="col">name</th>
-                        <th scope="col">link</th>
-                        <th scope="col">user</th>
-                        <th scope="col">password</th>
-                        <th scope="col">location</th>
-                        <th scope="col">comment</th>
-                        <th scope="col">Action</th>
+
+                        <th scope="col">Name</th>
+                        <th scope="col">Link</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Comment</th>
+                        <th scope="col">Actions</th>
+
 
                       </tr>
                     </thead>
                     <tbody>
+                        @foreach ($pro as $itm)
+                            <tr>
+
+                                <td scope="col">{{$itm->name}}</td>
+                                <td scope="col">{{$itm->link}}</td>
+                                <td scope="col">{{$itm->user}}</td>
+                                <td scope="col">{{$itm->password}}</td>
+                                <td scope="col">{{$itm->location}}</td>
+                                <td scope="col">{{$itm->comment}}</td>
+
+                                <td scope="col">
+                                    <a href="/delete/{{$itm->id}}"><button type="button">Delete</button></a>
+
+                                </td>
+
+
+                            </tr>
+
+                        @endforeach
 
 
                     </tbody>
