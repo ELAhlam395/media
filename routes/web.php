@@ -19,6 +19,7 @@ Route::get('', function () {
 });
 //---------------controller provider---
 Route::get("home",[providercontroller::class,'cancel']);
+//-----------------home----------
 Route::get("addprov",[providercontroller::class,'index']);
 Route::post("addprv",[providercontroller::class,'addprovider']);
 Route::get("addprov",[providercontroller::class,'show']);
@@ -28,4 +29,5 @@ Route::post("updated/{id}",[providercontroller::class,'update']);
 
 
 //----------------------controller server--------------
-Route::get("addservers",[servercontroller::class,'index']);
+Route::get("srvs",[servercontroller::class,'index']);
+Route::post("addsrv",[servercontroller::class,'addserver']);
