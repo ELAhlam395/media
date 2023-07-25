@@ -17,7 +17,7 @@
 <h1>UPDATE PROVIDER</h1>
 <form action="/updated/{{$pro->id}}" method="POST">
     {!! csrf_field() !!}
-
+    @csrf
 
 
        <div class="mb-3 row">

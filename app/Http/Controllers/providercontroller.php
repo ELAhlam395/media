@@ -83,10 +83,19 @@ class providercontroller extends Controller
     }
     public function update(Request $request ,$id )
     {
+        $request->validate([
+            'name'=>'required',
+            'link'=>'required',
+            'user'=>'required',
+            'password'=>'required',
+            'location'=>'required',
+            'comment'=>'required'
+
+        ]);
 
         $pro = Provider::find($id);
         $input = $request->all();
         $pro->update($input);
-        return redirect('addprov')->with('flash_message', 'provider Updated!');
+        return redirect('addprov');
     }
 }
