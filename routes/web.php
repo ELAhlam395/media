@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\providercontroller;
+use App\Http\Controllers\servercontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
