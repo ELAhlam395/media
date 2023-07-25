@@ -55,6 +55,11 @@ class servercontroller extends Controller
 
         //return view('appsupport.addproviders');
     }
+    public function liste()
+    {
+        //
+        return view('appsupport.listservers');
+    }
 
 
 }

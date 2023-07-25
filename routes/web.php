@@ -31,3 +31,7 @@ Route::post("updated/{id}",[providercontroller::class,'update']);
 //----------------------controller server--------------
 Route::get("srvs",[servercontroller::class,'index']);
 Route::post("addsrv",[servercontroller::class,'addserver']);
+
+
+Route::get("listeserverss",[servercontroller::class,'liste']);
+

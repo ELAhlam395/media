@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="password" class="col-sm-2 col-form-label">password</label>
+                        <label for="password" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="password">
                           <span style="color: red">@error('password'){{$message}}
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="domain" class="col-sm-2 col-form-label">domain</label>
+                        <label for="domain" class="col-sm-2 col-form-label">Domain</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="domain">
                           <span style="color: red">@error('domain'){{$message}}
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="provider" class="col-sm-2 col-form-label">provider</label>
+                        <label for="provider" class="col-sm-2 col-form-label">Provider</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="provider">
                           <span style="color: red">@error('provider'){{$message}}
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="duedate" class="col-sm-2 col-form-label">duedate</label>
+                        <label for="duedate" class="col-sm-2 col-form-label">Due Date</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="duedate">
                           <span style="color: red">@error('duedate'){{$message}}
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="datecreation" class="col-sm-2 col-form-label">datecreation</label>
+                        <label for="datecreation" class="col-sm-2 col-form-label">Date Creation</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="datecreation">
                           <span style="color: red">@error('datecreation'){{$message}}
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="price" class="col-sm-2 col-form-label">price</label>
+                        <label for="price" class="col-sm-2 col-form-label">Price</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="price">
                           <span style="color: red">@error('price'){{$message}}
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="methodepayment" class="col-sm-2 col-form-label">methodepayment</label>
+                        <label for="methodepayment" class="col-sm-2 col-form-label">Methode Payment</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="methodepayment">
                           <span style="color: red">@error('methodepayment'){{$message}}
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="namesrv" class="col-sm-2 col-form-label">namesrv</label>
+                        <label for="namesrv" class="col-sm-2 col-form-label">Name server</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="namesrv">
                           <span style="color: red">@error('namesrv'){{$message}}
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="account" class="col-sm-2 col-form-label">account</label>
+                        <label for="account" class="col-sm-2 col-form-label">Account</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="account">
                           <span style="color: red">@error('account'){{$message}}
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="comment" class="col-sm-2 col-form-label">comment</label>
+                        <label for="comment" class="col-sm-2 col-form-label">Comment</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="comment">
                           <span style="color: red">@error('comment'){{$message}}
@@ -128,7 +128,7 @@
                     </div>
 
                     <button type="submit">add</button>
-                    <a href="{{ url('home') }}"> <button type="button">cancel</button></a>
+                    <a href="{{ url('listeserverss') }}"> <button type="button">cancel</button></a>
 
 
 
