@@ -64,4 +64,29 @@ class providercontroller extends Controller
         return redirect('addprov');
 
     }
+    public function edit($id)
+
+    {
+        $pro = Provider::find($id);
+
+
+       // $pro ->delete();
+
+       // return redirect('addprov');
+       //return  Provider::find($id);
+
+
+        return  view('appsupport.editprovider')->with('pro',$pro);
+
+
+
+    }
+    public function update(Request $request ,$id )
+    {
+
+        $pro = Provider::find($id);
+        $input = $request->all();
+        $pro->update($input);
+        return redirect('addprov')->with('flash_message', 'provider Updated!');
+    }
 }

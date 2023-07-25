@@ -22,7 +22,7 @@
                     <div class="mb-3 row">
                         <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="text"  class="form-control" name="name" >
+                          <input type="text"  class="form-control" name="name"  >
                           <span style="color: red">@error('name'){{$message}}
 
                             @enderror</span>
@@ -116,6 +116,7 @@
 
                                 <td scope="col">
                                     <a href="/delete/{{$itm->id}}"><button type="button">Delete</button></a>
+                                    <a href="/edit/{{$itm->id}}"><button type="button">Edit</button></a>
 
                                 </td>
 
@@ -127,6 +128,7 @@
 
                     </tbody>
                   </table>
+
 
 
             </div>

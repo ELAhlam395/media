@@ -23,3 +23,7 @@ Route::get("cancel",[providercontroller::class,'cancel']);
 //Route::get("showprov",[providercontroller::class,'show']);
 Route::get("addprov",[providercontroller::class,'show']);
 Route::get("delete/{id}",[providercontroller::class,'delete']);
+
+Route::get("edit/{id}",[providercontroller::class,'edit']);
+
+Route::post("updated/{id}",[providercontroller::class,'update']);
