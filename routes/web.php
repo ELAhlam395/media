@@ -34,3 +34,7 @@ Route::post("addsrv",[servercontroller::class,'addserver']);
 Route::get("listeserverss",[servercontroller::class,'liste']);
 Route::get("listeserverss",[servercontroller::class,'showsrves']);
 
+
+Route::get("delete/{id}",[servercontroller::class,'deletesrv']);
+
+

@@ -10,6 +10,9 @@
 </head>
 <body>
 <H1>LIST SERVERS</H1>
+
+<a href="{{ url('srvs') }}"><button type="button">add servers</button></a>
+<a href="{{ url('home') }}"><button type="button">cancel</button></a> <br><br>
 <table class="table table-success table-striped">
     <thead>
       <tr>
@@ -52,7 +55,7 @@
 
 
             <td scope="col">
-                <a href=""><button type="button">Delete</button></a>
+                <a href="/delete/{{$itms->id}}"><button type="button">Delete</button></a>
                 <a href=""><button type="button">Edit</button></a>
 
             </td>
@@ -69,8 +72,6 @@
 
 
 
-<a href="{{ url('srvs') }}"><button type="button">add servers</button></a>
-<a href="{{ url('home') }}"><button type="button">cancel</button></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 

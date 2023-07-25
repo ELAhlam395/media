@@ -68,6 +68,18 @@ class servercontroller extends Controller
         $addsr = Server::all();
         return view('appsupport.listservers',compact('addsr'));
     }
+    public function deletesrv($id)
+
+    {
+        $addsr = Server::find($id);
+
+        //$pro::delete('delete from providers whre id =?',[$id]);
+
+        $addsr ->delete();
+
+        return redirect('listeserverss');
+
+    }
 
 
 }
