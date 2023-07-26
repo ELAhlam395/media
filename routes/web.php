@@ -14,9 +14,19 @@ use App\Http\Controllers\servercontroller;
 |
 */
 
+Route::get('/login', function () {
+    return view('appsupport/login');
+});
+
+
+
+
 Route::get('', function () {
     return view('appsupport/layout');
 });
+
+
+
 //---------------controller provider---
 Route::get("home",[providercontroller::class,'cancel']);
 //-----------------home----------
@@ -33,8 +43,7 @@ Route::get("srvs",[servercontroller::class,'index']);
 Route::post("addsrv",[servercontroller::class,'addserver']);
 Route::get("listeserverss",[servercontroller::class,'liste']);
 Route::get("listeserverss",[servercontroller::class,'showsrves']);
-
-
 Route::get("delete/{id}",[servercontroller::class,'deletesrv']);
-
+Route::get("editt/{id}",[servercontroller::class,'edit']);
+Route::post("updatedd/{id}",[servercontroller::class,'update']);
 

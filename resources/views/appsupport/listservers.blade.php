@@ -56,7 +56,7 @@
 
             <td scope="col">
                 <a href="/delete/{{$itms->id}}"><button type="button">Delete</button></a>
-                <a href=""><button type="button">Edit</button></a>
+                <a href="/editt/{{$itms->id}}"><button type="button">Edit</button></a>
 
             </td>
 

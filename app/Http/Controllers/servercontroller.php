@@ -80,6 +80,46 @@ class servercontroller extends Controller
         return redirect('listeserverss');
 
     }
+    public function edit($id)
 
+    {
+        $addsr = Server::find($id);
+
+
+       // $pro ->delete();
+
+       // return redirect('addprov');
+       //return  Provider::find($id);
+
+
+        return  view('appsupport.editserver')->with('addsr',$addsr);
+
+
+
+    }
+    public function update(Request $request ,$id )
+    {
+        $request->validate([
+            'name'=>'required',
+            'ip'=>'required',
+            'password'=>'required',
+            'domain'=>'required',
+            'provider'=>'required',
+            'duedate'=>'required',
+            'datecreation'=>'required',
+            'price'=>'required',
+            'methodepayment'=>'required',
+            'namesrv'=>'required',
+            'account'=>'required',
+            'comment'=>'required',
+
+
+        ]);
+
+        $addsr = Server::find($id);
+        $input = $request->all();
+        $addsr->update($input);
+        return redirect('listeserverss');
+    }
 
 }
